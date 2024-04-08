@@ -1,0 +1,221 @@
+<!-- specifies the version of HTML being used in a web document (HTML5) -->
+<!DOCTYPE html>
+
+<!-- root element of an HTML page
+wraps all the content on the entire page and is the container for all the other HTML elements
+lang attribute declares the language of the web page -->
+<html lang="en">
+  <!-- container for metadata and other head elements 
+  ex: title, external css, character encoding, script-->
+  <head>
+    <!-- specifies the character encoding -->
+    <meta charset="UTF-8" />
+    <!-- specifies the document mode or compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- sets the viewport (visible areas of a webpage) properties for the webpage.
+    ensuring that the webpage displays properly on various devices with different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links the external CSS file to the HTML document -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- links an external stylesheet from Google Fonts 
+    https://fonts.google.com/ -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Shortcut icon for webpage
+    Can take .ico, .png, .gif, .svg -->
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+    <!-- Website title -->
+    <title>Your Name</title>
+  </head>
+
+  <!-- defines the document's body, and is a container for all the visible contents -->
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <!-- Navbar Items created with anchor links
+      #'s are used to create links within the same webpage. 
+      followed by an ID attribute of an HTML element
+      when a user clicks on a link the browser will scroll to the viewport 
+      of the section with this id 
+      Can also link to a different HTML page -->
+      <a href="#main">Your Name</a>
+      <a href="#about-me">About Me</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Section container (the whole page)-->
+    <div class="main" id="main">
+      <!-- Header container (name, role, links) -->
+      <div class="header">
+        <!-- Header content container -->
+        <div class="content">
+          <!-- Your Name -->
+          <h1>Your Name</h1>
+          <!-- Role -->
+          <h3>Your Role</h3>
+          <!-- Buttons container -->
+          <div class="buttons">
+            <!-- Learn more -->
+            <button>
+              <!-- Will take us to the 'about-me' section-->
+              <a href="#about-me">Learn More</a>
+            </button>
+            <!-- LinkedIn button-->
+            <button>
+              <!-- Insert your Linkedin -->
+              <a href="https://www.linkedin.com/">LinkedIn</a>
+            </button>
+            <!-- Your Resume 
+            target = "_blank" means the linked document will open in a new browser tab-->
+            <button><a href="Resume.pdf" target="_blank">Resume</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Me container -->
+      <div class="about" id="about-me">
+        <!-- About me content container-->
+        <div class="content">
+          <!-- Profile Image -->
+          <div class="profile">
+            <img src="Square.jpg" alt="Profile Picture" />
+            <!-- Your Profile Image -->
+          </div>
+
+          <!-- About me Text -->
+          <div class="text">
+            <h1>About Me</h1>
+            <!-- Mention your college, major, interests, hobbies -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              <br /><br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+            <!-- Another button linking to your resume -->
+            <button><a href="resume.pdf" target="_blank">Resume</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience container -->
+      <div class="experience" id="experience">
+        <h1>Experience</h1>
+        <!-- Experience content container -->
+        <div class="experience-container">
+          <!-- Experience Items
+          Feel free to delete or add more experiences -->
+          <div class="experience-item">
+            <!-- Experience image -->
+            <img src="Square.jpg" alt="Microsoft" />
+            <!-- Company -->
+            <h2>Company</h2>
+            <!-- Role and date employed -->
+            <p>Role<br />x - x</p>
+          </div>
+
+          <div class="experience-item">
+            <img src="Square.jpg" alt="TwoSigma" />
+            <h2>Company</h2>
+            <p>Role<br />x - x</p>
+          </div>
+
+          <div class="experience-item">
+            <img src="Square.jpg" alt="NYC DOT" />
+            <h2>Company</h2>
+            <p>Role<br />x - x</p>
+          </div>
+          <!-- Add other experiences here using the same structure -->
+        </div>
+      </div>
+
+      <!--Project container -->
+      <div class="projects" id="projects">
+        <h1>Projects</h1>
+        <!-- Project content container -->
+        <div class="content">
+          <!-- Project Row 1 -->
+          <div class="project-row">
+            <!-- Project Link -->
+            <a href="https://project.com" class="project">
+              <!-- Project Image -->
+              <img src="./Projects/Square.jpg" alt="Project 1 Image" />
+              <h1>Project Name</h1>
+              <!-- Project Description -->
+              <p>Short description of Project.</p>
+            </a>
+
+            <!-- Add other projects here using the same structure -->
+
+            <a href="https://project.com" class="project">
+              <img src="./Projects/Square.jpg" alt="Project 2 Image" />
+              <h1>Project Name</h1>
+              <p>Short description of Project.</p>
+            </a>
+          </div>
+
+          <!-- Project Row 2 -->
+          <div class="project-row">
+            <a href="https://project.com" class="project">
+              <img src="./Projects/Square.jpg" alt="Project 3 Image" />
+              <h1>Project Name</h1>
+              <p>Short description of Project.</p>
+            </a>
+
+            <a href="https://project.com" class="project">
+              <img src="./Projects/Square.jpg" alt="Project 4 Image" />
+              <h1>Project Name</h1>
+              <p>Short description of Project.</p>
+
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact container -->
+      <div class="contact" id="contact">
+        <!-- Contact content container-->
+        <div class="content">
+          <h1>Contact Me</h1>
+          <!-- Contact Section title -->
+          <!-- Contact Section Description -->
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <a href="mailto:youremail@email.com">youremail@email.com</a>
+          </p>
+
+          <!-- Social Media Links 
+          https://www.flaticon.com/ -->
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/user/" target="_blank">
+              <img src="./SocialMedia/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/user" target="_blank">
+              <img src="./SocialMedia/github.png" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript for Navbar Background becoming transparent after you scrol -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
